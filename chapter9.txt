@@ -1,0 +1,14 @@
+2. [after §9.3] Declare an array named zipCodes that holds int values.
+
+    ans:
+
+        int zipCodes[] = new int[3];
+
+        zipCodes[0] = 1;
+        zipCodes[1] = 2; 
+        zipCodes[2] = 3;
+
+4. 
+
+
+
