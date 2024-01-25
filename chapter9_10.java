@@ -1,3 +1,5 @@
+
+
 public class chapter9_10 {
     public static void main(String[] args) {
         int[] preSort = new int[] {3, 2, 6, 9, 5};

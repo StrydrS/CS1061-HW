@@ -1,3 +1,5 @@
+
+
 public class chapter9_12 {
     public static void main(String[] args) {
         double[][] rectangles = {{1.0, 1.0, 1.0}, {1.0, 1.0, 1.0}};

@@ -1,3 +1,4 @@
+
 public class chapter9_2 {
     public static void main(String[] args) {
         int zipCodes[] = new int[3];

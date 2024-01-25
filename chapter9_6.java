@@ -1,3 +1,4 @@
+
  class chapter9_6 {
      public static void main(String[] args) {
         double[] allPrices = {10000, 11000, 25000, 18000, 30000, 9000, 12000, 21000};
