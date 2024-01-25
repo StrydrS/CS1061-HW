@@ -1,4 +1,4 @@
-
+// Declare an array named zipCodes that holds int values.
 public class chapter9_2 {
     public static void main(String[] args) {
         int zipCodes[] = new int[3];

@@ -1,46 +1,46 @@
-
-
 import java.util.Scanner;
 
 public class chapter9_16 {
     public static void main(String[] args) {
-        
+
         Scanner stdIn = new Scanner(System.in);
         String character;
 
+        BigBangCharacter[] characters = { 
+            new BigBangCharacter("Bernadette", "Melissa Rauch"),
+            new BigBangCharacter("Raj", "Kunal Nayyar"),
+            new BigBangCharacter("Amy", "Mayim Bialik"),
+            new BigBangCharacter("Sheldon", "Jim Parsons"),
+            new BigBangCharacter("Howard", "Simon Helberg"),
+            new BigBangCharacter("Leonard", "Johnny Galecki") 
+        };
 
-        BigBangCharacter[] characters = 
-        { new BigBangCharacter("Bernadette", "Melissa Rauch"),
-          new BigBangCharacter("Raj", "Kunal Nayyar"), 
-          new BigBangCharacter("Amy", "Mayim Bialik"),
-          new BigBangCharacter("Sheldon", "Jim Parsons"),
-          new BigBangCharacter("Howard", "Simon Helberg"),
-          new BigBangCharacter("Leonard", "Johnny Galecki") };
+        BigBangCast cast = new BigBangCast(characters);
 
-          BigBangCast cast = new BigBangCast(characters);
+        System.out.print("Enter the name of the character: ");
+        character = stdIn.nextLine();
+        cast.displayActor(character);
 
-          character = stdIn.nextLine();
-          cast.displayActor(character);
-
-          stdIn.close();
+        stdIn.close();
     }
 }
 
-
- class BigBangCast {
+class BigBangCast {
 
     private BigBangCharacter[] characters;
-    
 
     public BigBangCast(BigBangCharacter[] characters) {
         this.characters = characters;
     }
 
-    public void displayActor(String character) {
-        
-        for(BigBangCast characters : character) {
-
+    public void displayActor(String characterName) {
+        for (BigBangCharacter character : characters) {
+            if (character.getName().equalsIgnoreCase(characterName)) {
+                System.out.println(characterName + " is played by " + character.getActor());
+                return;
+            }
         }
+        System.out.println("Sorry! Couldn't find " + characterName + " in this list of characters.");
     }
 }
 
@@ -53,7 +53,7 @@ class BigBangCharacter {
         this.actor = actor;
     }
 
-    public String getName() { 
+    public String getName() {
         return this.name;
     }
 

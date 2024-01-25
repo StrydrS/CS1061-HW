@@ -1,3 +1,8 @@
+// Pond Program:
+// As part of your internship at Parkville’s Parks and Recreation Department, you’ve been
+// asked to write a program that keeps track of pond life. Your program doesn’t have to do
+// much—it simply prints pond life forms. For this exercise, provide a Pond class that uses
+// the following two instance variables and supports the subsequent main method:
 
 public class chapter9_4 {
         
